@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Films — AmberTunes by Maxim Novak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Short films and poetic documentaries by Maxim Novak (AmberTunes). Embedded YouTube — views count for your channel.">
+  <meta name="keywords" content="AmberTunes, Maxim Novak, short film, poetic documentary, experimental film, cinematic music">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Films — AmberTunes">
+  <meta property="og:description" content="Short films and poetic documentaries. Embedded YouTube (views count).">
+  <meta property="og:url" content="https://ambertunesmusic.github.io/films.html">
+  <meta property="og:image" content="https://ambertunesmusic.github.io/assets/og-films.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Films — AmberTunes">
+  <meta name="twitter:description" content="Short films and poetic documentaries.">
+  <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-films.jpg">
+  <style>
+    :root{ --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --border:#555; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif; line-height:1.55; }
+    a{ color:#d9d9d9; text-decoration:none } a:hover{ text-decoration:none }
+    .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
+    header{ padding:28px 0 0; }
+
+    .main-menu{
+      display:flex; flex-direction:column; align-items:center; gap:12px; margin:28px 0 0; padding:0;
+    }
+    .main-menu a{
+      display:inline-block; width:180px; text-align:center; padding:10px 0;
+      border:1px solid var(--border); border-radius:12px; color:#e0e0e0;
+      background-color:#111; transition:all .3s ease;
+      box-shadow:0 3px 6px rgba(255,255,255,0.06);
+    }
+    .main-menu a:hover{
+      background-color:#1b1b1b; transform:translateY(-2px);
+      box-shadow:0 6px 12px rgba(255,255,255,0.08);
+    }
+
+    .hero{
+      margin:140px auto 24px; max-width:900px; text-align:center; padding:20px;
+      border-radius:16px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+      border:1px solid #1e1e1e;
+    }
+    @media(min-width:1000px){ .hero{ margin-top:190px; } }
+    .hero h1{ font-weight:600; font-size:2rem; margin:0 0 8px; }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .video-grid{ display:grid; grid-template-columns:1fr; gap:18px; margin:36px 0 50px; }
+    @media(min-width:720px){ .video-grid{ grid-template-columns:1fr 1fr; } }
+    .video-card{ background:#111; border:1px solid #222; border-radius:14px; padding:14px; }
+    .video-wrapper{ position:relative; width:100%; aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:#000; }
+    .video-wrapper iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .video-card h3{ margin:.6rem 0 .2rem; font-size:1.05rem; }
+    .video-card p{ margin:0; color:var(--muted); font-size:.95rem; }
+
+    footer{ margin:40px 0 24px; color:#8a8a8a; font-size:.9rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="main-menu">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="clips.html">Clips</a>
+      <a href="films.html">Films</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Films</h1>
+      <p>Short films and poetic documentaries by Maxim Novak. Embedded via YouTube — views count.</p>
+    </section>
+
+    <section class="video-grid">
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/2ylRlg2hIRQ" title="Film 1" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>The Last Prayer</h3>
+        <p>Thriller → Film Noir | Short Film (2025).</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/vP2gi8gdPvs&t" title="Film 2" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>City as a Dream</h3>
+        <p>Film Noir | Short Film (2025).</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/aW0S3D-LS-Q" title="Film 3" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>Fragments of the Beginning — a poetic visual journey</h3>
+        <p>Mistical texture.</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/cGeuY8oNdn4" title="Film 4" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>The Sorrow Tree and Butterfly</h3>
+        <p>Lyrics.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© AmberTunes — Maxim Novak</small>
+  </footer>
+</body>
+</html>
