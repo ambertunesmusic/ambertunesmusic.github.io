@@ -30,7 +30,7 @@
     .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
     header{ padding:28px 0 0; }
 
-    /* Menu (как на новых страницах) */
+    /* Menu */
     .main-menu{
       display:flex; flex-direction:column; align-items:center; gap:12px; margin:28px 0 0; padding:0;
     }
@@ -57,22 +57,29 @@
 
     /* Contact cards */
     .grid{
-      display:grid; grid-template-columns:1fr; gap:18px; margin:36px 0 60px;
+      display:grid; grid-template-columns:1fr; gap:22px; margin:36px 0 60px;
     }
     @media(min-width:720px){ .grid{ grid-template-columns:1fr 1fr; } }
     .card{
-      background:#111; border:1px solid #222; border-radius:14px; padding:18px;
+      background:#111; border:1px solid #222; border-radius:14px; padding:20px;
       transition:all .3s ease;
     }
     .card:hover{ background:#181818; transform:translateY(-3px); }
-    .card h2{ margin:0 0 8px; font-size:1.15rem; }
+    .card h2{ margin:0 0 10px; font-size:1.15rem; }
     .muted{ color:var(--muted); margin:0; }
 
     .btn{
-      display:inline-block; margin-top:10px; padding:8px 14px; border:1px solid #2a2a2a; border-radius:10px;
-      color:#e6e6e6; background:#0f0f0f;
+      display:inline-block; margin-top:12px; padding:8px 14px; border:1px solid #2a2a2a; border-radius:10px;
+      color:#e6e6e6; background:#0f0f0f; transition:all .3s ease;
     }
     .btn:hover{ background:#1a1a1a; }
+
+    footer{
+      margin:40px 0 24px;
+      color:#8a8a8a;
+      font-size:.9rem;
+      text-align:center; /* центрирование */
+    }
   </style>
 </head>
 
@@ -105,20 +112,18 @@
         <h2>Profiles</h2>
         <p class="muted">Explore catalog & credits.</p>
         <p style="margin-top:10px">
-          <a class="btn" href="https://freemusicarchive.org" target="_blank" rel="noopener">Free Music Archive</a>
+          <a class="btn" href="https://freemusicarchive.org/music/maxim-novak/" target="_blank" rel="noopener">Free Music Archive</a>
           &nbsp;
-          <a class="btn" href="https://www.imdb.com" target="_blank" rel="noopener">IMDb</a>
+          <a class="btn" href="https://www.imdb.com/name/nm17047519/" target="_blank" rel="noopener">IMDb</a>
+          &nbsp;
+          <a class="btn" href="https://www.facebook.com/ambertunes" target="_blank" rel="noopener">Facebook</a>
         </p>
       </article>
     </section>
   </main>
-  <footer>
-  footer{
-  margin:40px 0 24px;
-  color:#8a8a8a;
-  font-size:.9rem;
-  text-align:center;
-}
-</footer>
+
+  <footer class="container">
+    <small>© AmberTunes — Maxim Novak</small>
+  </footer>
 </body>
 </html>
