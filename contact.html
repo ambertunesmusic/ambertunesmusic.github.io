@@ -1,231 +1,120 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   Contact — Maxim Novak
-  </title>
-<meta content="Get in touch with composer Maxim Novak for collaborations, licensing, and more." name="description"/>
-<link href="/favicon.png" rel="icon" type="image/png"/>
-<style>
-   body {
-      background-color: black;
-      color: white;
-      font-family: sans-serif;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .contact-info {
-      flex: 1;
-    }
-    .contact-info h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .contact-info p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #ddd;
-      margin-bottom: 0.8rem;
-    }
-    .contact-info a {
-      color: #d4af37;
-      text-decoration: underline;
-    }
-    .photo-placeholder {
-  padding-bottom: 2rem;
-  margin-bottom: 4rem;
-      max-width: 300px;
-      border: 2px solid #d4af37;
-      padding: 0.5rem;
-      text-align: center;
-      font-style: italic;
-      color: #999;
-      margin-top: 1rem;
-    }
-  
-.buttons {
-  margin-top: 10rem;
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.buttons a {
-  border: 1px solid #d4af37;
-  padding: 0.75rem 2rem;
-  color: #d4af37;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 0.375rem;
-  transition: all 0.3s ease;
-}
-.buttons a:hover {
-  background: #d4af37;
-  color: black;
-}
+  <meta charset="utf-8">
+  <title>Contact — AmberTunes by Maxim Novak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact composer Maxim Novak (AmberTunes). Cinematic, jazz & bossa nova instrumentals for films and documentaries.">
+  <meta name="keywords" content="AmberTunes, Maxim Novak, contact, composer, documentary music, cinematic, jazz, bossa nova">
 
-.deco-line {
-  height: 2px;
-  width: 180px;
-  background: linear-gradient(to right, transparent, #d4af37, transparent);
-  margin: 1rem auto 3rem;
-}
+  <link rel="icon" href="favicon.png" type="image/png">
 
-.photo-frame {
-  position: relative;
-  display: inline-block;
-  padding: 1rem;
-  margin: 2rem auto 4rem;
-  border: 2px solid #d4af37;
-  background-color: black;
-}
-
-.photo-frame img {
-  max-width: 300px;
-  display: block;
-}
-
-.photo-caption {
-  text-align: center;
-  color: #aaa;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-.photo-frame::before,
-.photo-frame::after {
-  content: "";
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #d4af37;
-}
-
-.photo-frame::before {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-
-.photo-frame::after {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
-  
-.fade-in {
-  animation: fadeIn 2s ease-in;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.contact-box {
-  border: 1px solid #d4af37;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 500px;
-  text-align: left;
-  background-color: rgba(255,255,255,0.02);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-  border-radius: 0.5rem;
-}
-
-
-.contact-box {
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 500px;
-  text-align: left;
-  background-color: rgba(255,255,255,0.02);
-  border: none;
-  position: relative;
-  box-shadow: inset 0 0 0 2px #d4af37;
-}
-
-.contact-box::before,
-.contact-box::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #d4af37;
-}
-
-.contact-box::before {
-  top: -1px;
-  left: -1px;
-  border-bottom: none;
-  border-right: none;
-}
-
-.contact-box::after {
-  bottom: -1px;
-  right: -1px;
-  border-top: none;
-  border-left: none;
-}
-
-</style>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M">
-</script>
-<script>
-   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4R5MGM2N5M');
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4R5MGM2N5M');
   </script>
+
+  <style>
+    :root{ --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --border:#555; }
+    html,body{
+      margin:0; padding:0; background:var(--bg); color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif;
+      line-height:1.55;
+    }
+    a{ color:#d9d9d9; text-decoration:none }
+    a:hover{ text-decoration:none }
+    .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
+    header{ padding:28px 0 0; }
+
+    /* Menu (как на новых страницах) */
+    .main-menu{
+      display:flex; flex-direction:column; align-items:center; gap:12px; margin:28px 0 0; padding:0;
+    }
+    .main-menu a{
+      display:inline-block; width:180px; text-align:center; padding:10px 0;
+      border:1px solid var(--border); border-radius:12px; color:#e0e0e0;
+      background-color:#111; transition:all .3s ease;
+      box-shadow:0 3px 6px rgba(255,255,255,0.06);
+    }
+    .main-menu a:hover{
+      background-color:#1b1b1b; transform:translateY(-2px);
+      box-shadow:0 6px 12px rgba(255,255,255,0.08);
+    }
+
+    /* Hero */
+    .hero{
+      margin:140px auto 24px; max-width:900px; text-align:center; padding:20px;
+      border-radius:16px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+      border:1px solid #1e1e1e;
+    }
+    @media(min-width:1000px){ .hero{ margin-top:190px; } }
+    .hero h1{ font-weight:600; font-size:2rem; margin:0 0 8px; }
+    .hero p{ margin:0; color:var(--muted); }
+
+    /* Contact cards */
+    .grid{
+      display:grid; grid-template-columns:1fr; gap:18px; margin:36px 0 60px;
+    }
+    @media(min-width:720px){ .grid{ grid-template-columns:1fr 1fr; } }
+    .card{
+      background:#111; border:1px solid #222; border-radius:14px; padding:18px;
+      transition:all .3s ease;
+    }
+    .card:hover{ background:#181818; transform:translateY(-3px); }
+    .card h2{ margin:0 0 8px; font-size:1.15rem; }
+    .muted{ color:var(--muted); margin:0; }
+
+    .btn{
+      display:inline-block; margin-top:10px; padding:8px 14px; border:1px solid #2a2a2a; border-radius:10px;
+      color:#e6e6e6; background:#0f0f0f;
+    }
+    .btn:hover{ background:#1a1a1a; }
+  </style>
 </head>
+
 <body>
-<p class="fade-in" style="font-style: italic; font-size: 1.3rem; color: #d4af37; text-align: center; margin-top: 2rem;">
-  If music speaks to you — write me a letter.
-</p>
-<div style="text-align: center; margin-top: 3rem;">
-<h1>
-    Contact
-   </h1>
-<div class="deco-line">
-</div>
-<div class="buttons" style="display: flex; justify-content: center; gap: 1.25rem; margin: 2rem auto;">
-<a href="/music">
-     Music
-    </a>
-<a href="/about">
-     About
-    </a>
-<a href="/index">
-     Home
-    </a>
-</div><div class="contact-box fade-in">
-<p><span style="margin-right:8px;">📧</span> <a href="mailto:ambertunes@gmail.com">ambertunes@gmail.com</a></p>
-<p><span style="margin-right:8px;">🎵</span> <a href="https://freemusicarchive.org/music/maxim-novak/" target="_blank">Free Music Archive</a></p>
-<p><span style="margin-right:8px;">🌐</span> <a href="https://www.imdb.com/name/nm17047519/" target="_blank">IMDb Profile</a></p>
-</div>
-</div>
-<div class="container">
-<div class="contact-info">
-</div>
-<div class="photo-frame">
-<img alt="Maxim Novak full portrait" src="/maxim-full-cropped.jpg"/>
-<div class="photo-caption">
-     Let’s work together.
-    </div>
-</div>
-<div class="photo-caption">
-    Stylist and Photographer: P. Borodulin
-   </div>
-</div>
+  <header class="container">
+    <nav class="main-menu">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="clips.html">Clips</a>
+      <a href="films.html">Films</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Contact</h1>
+      <p>If music speaks to you — write me a letter.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Email</h2>
+        <p class="muted">Direct inquiries, licensing, collaborations.</p>
+        <a class="btn" href="mailto:ambertunes@gmail.com?subject=AmberTunes%20inquiry">ambertunes@gmail.com</a>
+      </article>
+
+      <article class="card">
+        <h2>Profiles</h2>
+        <p class="muted">Explore catalog & credits.</p>
+        <p style="margin-top:10px">
+          <a class="btn" href="https://freemusicarchive.org" target="_blank" rel="noopener">Free Music Archive</a>
+          &nbsp;
+          <a class="btn" href="https://www.imdb.com" target="_blank" rel="noopener">IMDb</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© AmberTunes — Maxim Novak</small>
+  </footer>
 </body>
 </html>
