@@ -74,7 +74,7 @@
 
     /* Hero (raised slightly from lower third) */
     .hero {
-  margin:100px auto 24px; /* было 140 — теперь выше */
+  .hero{ margin: clamp(60px, 12vh, 140px) auto 24px; }
   max-width:900px;
   text-align:center;
   padding:20px;
@@ -82,7 +82,8 @@
   background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
   border:1px solid #1e1e1e;
 }
-@media(min-width:1000px){
+    @media (max-height: 800px){ .hero{ margin-top:80px; } }
+    @media(min-width:1000px){
   .hero{ margin-top:190px; }
 }
     }
