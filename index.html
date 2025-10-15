@@ -73,17 +73,20 @@
     }
 
     /* Hero (raised slightly from lower third) */
-    .hero {
-  .hero{
-  margin: clamp(60px, 12vh, 140px) auto 24px; /* top | left/right | bottom */
-}
-
-  max-width:900px;
-  text-align:center;
-  padding:20px;
-  border-radius:16px;
-  background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
-  border:1px solid #1e1e1e;
+    
+  .hero {
+  position: relative;
+  margin: 0 auto;
+  margin-top: clamp(50px, 10vh, 120px);
+  margin-bottom: 24px;
+  max-width: 900px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid #1e1e1e;
 }
     @media (max-height: 800px){
   .hero{ margin-top: 80px; }
