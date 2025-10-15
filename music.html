@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Music — AmberTunes by Maxim Novak</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AmberTunes — cinematic, jazz & bossa nova instrumentals by Maxim Novak. Music made for films, documentaries and quiet moments.">
-  <meta name="keywords" content="AmberTunes, Maxim Novak, music, soundtrack, jazz, bossa nova, cinematic, documentary, instrumental, composer">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — AmberTunes</title>
 
+  <meta name="description" content="Instrumental collections by Maxim Novak — cinematic, jazz and bossa nova music for films, storytellers, and dreamers.">
+  <meta name="keywords" content="AmberTunes, Maxim Novak, cinematic music, bossa nova, jazz, soundtrack, instrumental, film music">
   <link rel="icon" href="favicon.png" type="image/png">
 
   <!-- Google Analytics -->
@@ -19,111 +19,178 @@
   </script>
 
   <style>
-    :root{ --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --border:#555; }
-    html,body{
-      margin:0; padding:0; background:var(--bg); color:var(--fg);
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif;
-      line-height:1.55;
-    }
-    a{ color:#d9d9d9; text-decoration:none }
-    a:hover{ text-decoration:none }
-    .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
-    header{ padding:28px 0 0; }
-
-    /* Menu */
-    .main-menu{
-      display:flex; flex-direction:column; align-items:center; gap:12px; margin:28px 0 0; padding:0;
-    }
-    .main-menu a{
-      display:inline-block; width:180px; text-align:center; padding:10px 0;
-      border:1px solid var(--border); border-radius:12px; color:#e0e0e0;
-      background-color:#111; transition:all .3s ease;
-      box-shadow:0 3px 6px rgba(255,255,255,0.06);
-    }
-    .main-menu a:hover{
-      background-color:#1b1b1b; transform:translateY(-2px);
-      box-shadow:0 6px 12px rgba(255,255,255,0.08);
+    :root {
+      --bg: #000;
+      --fg: #e6e6e6;
+      --card: #111;
+      --border: #555;
     }
 
-    .hero{
-      margin:120px auto 24px; max-width:900px; text-align:center; padding:20px;
-      border-radius:16px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
-      border:1px solid #1e1e1e;
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      text-align: center;
     }
-    .hero h1{ font-weight:600; font-size:2rem; margin:0 0 8px; }
-    .hero p{ margin:0; color:var(--muted); }
 
-    /* Collections nav */
-    .collections-nav{
-      display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
-      margin:20px 0 10px;
+    nav {
+      margin-top: 40px;
     }
-    .collections-nav a{
-      padding:6px 12px; border:1px solid #2a2a2a; border-radius:999px;
-      background:#0f0f0f; color:#e6e6e6; font-size:.95rem;
-    }
-    .collections-nav a:hover{ background:#1a1a1a; }
 
-    /* Collection blocks */
-    .collection{
-      margin:34px 0 46px; padding:18px;
-      border:1px solid #1e1e1e; border-radius:14px;
-      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+    .nav-button {
+      display: block;
+      width: 140px;
+      margin: 8px auto;
+      padding: 10px 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
     }
-    .collection h2{ margin:0 0 10px; font-size:1.35rem; }
-    .collection p{ color:#aeb0b2; margin:0 0 12px; }
-    .banner{
-      overflow:hidden; border-radius:12px; border:1px solid #222; margin:10px 0 14px;
-    }
-    .banner img{ display:block; width:100%; height:auto; }
 
-    html{ scroll-behavior:smooth; }
-
-    footer{
-      margin:40px 0 24px;
-      color:#8a8a8a;
-      font-size:.9rem;
-      text-align:center;
+    .nav-button:hover {
+      background: #222;
     }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 25px 15px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    /* === Collections List === */
+    .collections-list {
+      max-width: 700px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    .collections-list h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .collections-list ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .collections-list li {
+      margin: 5px 0;
+    }
+
+    .collections-list a {
+      color: var(--fg);
+      border-bottom: 1px solid #333;
+      padding-bottom: 2px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .collections-list a:hover {
+      color: #fff;
+      border-color: #777;
+    }
+
+    /* === Collections === */
+    .collection {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .collection h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .collection img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 40px 0;
+      color: #aaa;
+    }
+.collection {
+  text-align: left;
+}
+
+.collection h3 {
+  margin-left: 20px;
+}
+
+audio {
+  display: block;
+  margin: 8px 0 16px 20px;
+  width: 90%;
+  max-width: 520px;
+}
   </style>
 </head>
 
 <body>
-  <header class="container">
-    <nav class="main-menu">
-      <a href="index.html">Home</a>
-      <a href="music.html">Music</a>
-      <a href="clips.html">Clips</a>
-      <a href="films.html">Films</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Music</h1>
-      <p>Instrumental collections by Maxim Novak — music for films, storytellers and dreamers.</p>
-    </section>
+  <nav>
+    <a href="index.html" class="nav-button">Home</a>
+    <a href="music.html" class="nav-button">Music</a>
+    <a href="clips.html" class="nav-button">Clips</a>
+    <a href="films.html" class="nav-button">Films</a>
+    <a href="about.html" class="nav-button">About</a>
+    <a href="contact.html" class="nav-button">Contact</a>
+  </nav>
 
-    <!-- Навигация по коллекциям -->
-    <nav class="collections-nav">
-      <a href="#urban-romance">Urban Romance</a>
-      <a href="#sunset-nova">Sunset Nova</a>
-      <a href="#nature-notes">Nature Notes</a>
-      <a href="#folk-stories">Folk Stories</a>
-      <a href="#night-letters">Night Letters</a>
-      <a href="#circus-scenes">Circus Scenes</a>
-      <a href="#childhood-lights">Childhood Lights</a>
-      <a href="#moonlight-diaries">Moonlight Diaries</a>
-      <a href="#silent-roads">Silent Roads</a>
+  <section class="hero">
+    <h1>Music</h1>
+    <p>Instrumental collections by Maxim Novak — music for films, storytellers and dreamers.</p>
+  </section>
+
+  <section class="collections-list">
+    <h2>Collections:</h2>
+    <ul>
+      <li><a href="#urban-romance">Urban Romance</a></li>
+      <li><a href="#sunset-nova">Sunset Nova</a></li>
+      <li><a href="#nature-notes">Nature Notes</a></li>
+      <li><a href="#folk-stories">Folk Stories</a></li>
+      <li><a href="#night-letters">Night Letters</a></li>
+      <li><a href="#circus-scenes">Circus Scenes</a></li>
+      <li><a href="#childhood-lights">Childhood Lights</a></li>
+      <li><a href="#moonlight-diaries">Moonlight Diaries</a></li>
+      <li><a href="#silent-roads">Silent Roads</a></li>
+    </ul>
+  </section>
+
     </nav>
 
     <!-- 1 -->
     <section id="urban-romance" class="collection">
       <h2>Urban Romance: Echoes of the City</h2>
       <p>Where lights, stories and memories meet under the city sky.</p>
-      <div class="banner"><img src="urban-romance-banner.jpg" alt="Urban Romance banner"></div>
+      <div class="banner"><img src="urban_romance_nightlight.png" alt="Urban Romance banner"></div>
       <div class="track">
 <strong>
      Streets Of Old Town
@@ -170,7 +237,7 @@
     <section id="sunset-nova" class="collection">
       <h2>Sunset Nova — Stories Told in Samba and Light</h2>
       <p>Golden-hour warmth, bossa nova & gentle nostalgia.</p>
-      <div class="banner"><img src="sunset-nova-banner.jpg" alt="Sunset Nova banner"></div>
+      <div class="banner"><img src="sunset_nova_banner.png" alt="Sunset Nova banner"></div>
     <div class="track">
 <strong>
      Invitation To Bossa Nova
@@ -217,7 +284,7 @@
     <section id="nature-notes" class="collection">
       <h2>Nature Notes: Songs from the Meadow</h2>
       <p>Acoustic textures, air and calm reflections.</p>
-      <div class="banner"><img src="nature-notes-banner.jpg" alt="Nature Notes banner"></div>
+      <div class="banner"><img src="nature_notes_banner.png" alt="Nature Notes banner"></div>
     <div class="track">
 <strong>
      Majestic Nature
@@ -264,7 +331,7 @@
     <section id="folk-stories" class="collection">
       <h2>Folk Stories: Whispered on the Wind</h2>
       <p>Folk-inspired instrumentals with a lyrical heart.</p>
-      <div class="banner"><img src="folk-stories-banner.jpg" alt="Folk Stories banner"></div>
+      <div class="banner"><img src="folk_stories_banner.png" alt="Folk Stories banner"></div>
     <div class="track">
 <strong>
      Village Wedding
@@ -311,7 +378,7 @@
     <section id="night-letters" class="collection">
       <h2>Night Letters — Letters Never Sent</h2>
       <p>Slow, contemplative, intimate.</p>
-      <div class="banner"><img src="night-letters-banner.jpg" alt="Night Letters banner"></div>
+      <div class="banner"><img src="night_letters_banner.png" alt="Night Letters banner"></div>
     <div class="track">
 <strong>
      Missing You
@@ -358,7 +425,7 @@
     <section id="circus-scenes" class="collection">
       <h2>Circus Scenes</h2>
       <p>Retro fairground moods, humor and bittersweet nostalgia.</p>
-      <div class="banner"><img src="circus-scenes-banner.jpg" alt="Circus Scenes banner"></div>
+      <div class="banner"><img src="circus_stories_banner.png" alt="Circus Scenes banner"></div>
     <div class="track"><strong>Clown</strong><br/><audio controls="" src="Clown.mp3"></audio></div><div class="track"><strong>Dark Circus</strong><br/><audio controls="" src="Dark_Circus.mp3"></audio></div><div class="track"><strong>Ceremony</strong><br/><audio controls="" src="Ceremony.mp3"></audio></div><div class="track"><strong>Dancing Silhouettes</strong><br/><audio controls="" src="Dancing_Silhouettes.mp3"></audio></div><div class="track"><strong>Joke</strong><br/><audio controls="" src="Joke.mp3"></audio></div></div>
 	</section>
 
@@ -366,7 +433,7 @@
     <section id="childhood-lights" class="collection">
       <h2>Childhood Lights</h2>
       <p>Small wonders, gentle melodies and warm memories.</p>
-      <div class="banner"><img src="childhood-lights-banner.jpg" alt="Childhood Lights banner"></div>
+      <div class="banner"><img src="childhood_lights_banner.png" alt="Childhood Lights banner"></div>
     <div class="track"><strong>A Pocket Full of Sunshine</strong><br/><audio controls="" src="A_Pocket_Full_of_Sunshine.mp3"></audio></div>
 	<div class="track"><strong>Dancing Toys</strong><br/><audio controls="" src="Dancing_Toys.mp3"></audio></div>
 	<div class="track"><strong>Little Hands, Big Hearts</strong><br/><audio controls="" src="Little_Hands,_Big_Hearts.mp3"></audio></div>
@@ -378,7 +445,7 @@
     <section id="moonlight-diaries" class="collection">
       <h2>Moonlight Diaries</h2>
       <p>Nocturnes, reflections and quiet night walks.</p>
-      <div class="banner"><img src="moonlight-diaries-banner.jpg" alt="Moonlight Diaries banner"></div>
+      <div class="banner"><img src="moonlight_diaries_banner.png" alt="Moonlight Diaries banner"></div>
    <div class="track"><strong>Chapter One – Your Keys Are Still in the Bowl</strong><br/>
 <audio controls src="Chapter_One.mp3"></audio></div>
 <div class="track"><strong>Chapter Two – Coffee on the Porch</strong><br/>
@@ -395,7 +462,7 @@
     <section id="silent-roads" class="collection">
       <h2>Silent Roads</h2>
       <p>Lonely highways, distant lights, unhurried thoughts.</p>
-      <div class="banner"><img src="silent-roads-banner.jpg" alt="Silent Roads banner"></div>
+      <div class="banner"><img src="silent_roads_banner.png" alt="Silent Roads banner"></div>
       <div class="track"><strong>Impressions</strong><br/><audio controls src="impressions.mp3"></audio></div>
   <div class="track"><strong>Kaleidoscope</strong><br/><audio controls src="kaleidoscope.mp3"></audio></div>
   <div class="track"><strong>Moonlight Rider</strong><br/><audio controls src="moonlight_rider.mp3"></audio></div>
