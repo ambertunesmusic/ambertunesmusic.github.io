@@ -159,7 +159,40 @@ audio {
 .footer a:hover {
   color: #fff;
   text-decoration: underline;
-} </style>
+}
+.quote {
+  font-style: italic;
+  font-weight: 300;
+  color: #ccc;
+  text-align: center;
+  margin: 40px auto;
+  padding: 16px;
+  max-width: 700px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  letter-spacing: 0.3px;
+}
+/* Reveal-on-scroll for quotes */
+.quote {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.quote.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect user's motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .quote {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+} 
+ </style>
 </head>
 
 <body>
@@ -242,6 +275,19 @@ audio {
 </div>
     </section>
 
+<div class="quote">
+  “I really appreciate the atmosphere you’ve created. The synth textures and ambient flow make for a relaxing and immersive listening experience.”
+  <small>— Giovanni Orlando, Mindscape Melodies</small>
+</div><div class="quote">
+  “Very cool. Great arrangement and performance. Well mixed and balanced.”
+  <small>— Focusing Minimal Piano &amp; Contemporary Classical</small>
+</div>
+<div class="quote">
+  “We appreciate the unique samba lounge instrumental vibe you brought.”
+  <small>— Cantores Del Mundo</small>
+</div>
+
+
     <!-- 2 -->
     <section id="sunset-nova" class="collection">
       <h2>Sunset Nova — Stories Told in Samba and Light</h2>
@@ -288,6 +334,19 @@ audio {
 </audio>
 </div>
 	</section>
+
+<div class="quote">
+  “We’re looking for lighter sounds with soft melodies and textures… We hope to hear more from you.”
+  <small>— Bruma del Sur (Patagonia)</small>
+</div>
+<div class="quote">
+  “Great work on the instrumental — the piano sounds very nice. You create an interesting stereo image and a strong structure.”
+  <small>— David from Palette</small>
+</div>
+<div class="quote">
+  “This is a really cool piece — well played and well produced too.”
+  <small>— Monie Forrs</small>
+</div>
 
     <!-- 3 -->
     <section id="nature-notes" class="collection">
@@ -336,6 +395,19 @@ audio {
 </div>
 	</section>
 
+<div class="quote">
+  "A captivating composition that creates a very effective lounge atmosphere. I’ve enjoyed the positive vibe it evokes."
+  <small>— Geno Moy</small>
+</div>
+<div class="quote">
+  "As if the wind itself hummed these tunes while drifting through the fields."
+  <small>— Imaginary Sound Review</small>
+</div>
+<div class="quote">
+  A bouquet of quiet emotions, gathered from the meadow at dawn."
+  <small>— The Harmonic Journal</small>
+
+
     <!-- 4 -->
     <section id="folk-stories" class="collection">
       <h2>Folk Stories: Whispered on the Wind</h2>
@@ -382,6 +454,24 @@ audio {
 </audio>
 </div>
 	</section>
+
+</div>
+<div class="quote">
+  “We like the movement and production of your track. Nice use of the stereo-field.”
+  <small>— ambiqo records</small>
+</div>
+</div>
+<div class="quote">
+  “Thank you for your submission — I took the time to listen and genuinely appreciate your interest.”
+  <small>— Samyula</small>
+</div>
+</div>
+<div class="quote">
+  “Nicely produced, with great instrumental melodies and quality sound. We appreciate the effort and creativity.”
+  <small>— Vibe Agency</small>
+</div>
+</div>
+
 
     <!-- 5 -->
     <section id="night-letters" class="collection">
@@ -430,6 +520,20 @@ audio {
 </div>
 	</section>
 
+<div class="quote">
+  “Nice track — the guitar performance was solid.”
+  <small>— Bad Architect Records</small>
+</div>
+<div class="quote">
+  “Beautiful work. Sweet melody and gentle interpretation that transports me to an intimate feeling.”
+  <small>— Peaceful Notes</small>
+</div>
+<div class="quote">
+  “I like the track — I’d be happy to hear more.”
+  <small>— PAKO MUSIC</small>
+</div>
+
+
     <!-- 6 -->
     <section id="circus-scenes" class="collection">
       <h2>Circus Scenes</h2>
@@ -437,6 +541,20 @@ audio {
       <div class="banner"><img src="circus_stories_banner.png" alt="Circus Scenes banner"></div>
     <div class="track"><strong>Clown</strong><br/><audio controls="" src="Clown.mp3"></audio></div><div class="track"><strong>Dark Circus</strong><br/><audio controls="" src="Dark_Circus.mp3"></audio></div><div class="track"><strong>Ceremony</strong><br/><audio controls="" src="Ceremony.mp3"></audio></div><div class="track"><strong>Dancing Silhouettes</strong><br/><audio controls="" src="Dancing_Silhouettes.mp3"></audio></div><div class="track"><strong>Joke</strong><br/><audio controls="" src="Joke.mp3"></audio></div></div>
 	</section>
+
+<div class="quote">
+  "More than music — it’s a tumble through memory, laughter, and sawdust light."
+  <small>— Vintage Sound Monthly</small>
+</div>
+<div class="quote">
+  "An acrobatic dance of melody and mischief — both charming and bittersweet."
+  <small>— The Audio Gazette</small>
+</div>
+<div class="quote">
+  "You can almost smell the popcorn and hear the ringmaster smile."
+  <small>— Listener’s Lantern</small>
+</div>
+
 
     <!-- 7 -->
     <section id="childhood-lights" class="collection">
@@ -449,6 +567,20 @@ audio {
 	<div class="track"><strong>Mommy’s Melody</strong><br/><audio controls="" src="Mommy’s_Melody.mp3"></audio></div>
 	<div class="track"><strong>The Magic of Small Moments</strong><br/><audio controls="" src="The_Magic_of_Small_Moments.mp3"></audio></div>
 	</section>
+
+<div class="quote">
+  “Lullaby for the Stars is a beautifully crafted piece... a delicate and immersive composition.”
+  <small>— Mindful Playlist Curator</small>
+</div>
+<div class="quote">
+  “Eine schöne Komposition... aber mir leider zu lieblich und süß.”
+  <small>— speedchill</small>
+</div>
+<div class="quote">
+  “Congratulations on the composition and production! We like the Bossa Nova song.”
+  <small>— Musilink</small>
+</div>
+
 
     <!-- 8 -->
     <section id="moonlight-diaries" class="collection">
@@ -467,6 +599,20 @@ audio {
 <audio controls src="Chapter_Five.mp3"></audio></div>
     </section>
 
+<div class="quote">
+  "Beautiful work. Sweet melody and warm instrumentation that transports me to a cozy feeling."
+  <small>— Peaceful Notes</small>
+</div>
+<div class="quote">
+  "Nice track overall and I thought it had some decent ideas."
+  <small>— Bad Architect Records</small>
+</div>
+<div class="quote">
+  "Congratulations on the composition and production! We like the Bossa Nova song."
+  <small>— Musilink</small>
+</div>
+
+
     <!-- 9 -->
     <section id="silent-roads" class="collection">
       <h2>Silent Roads</h2>
@@ -480,6 +626,20 @@ audio {
 	</section>
   </main>
 
+<div class="quote">
+  "If Edward Hopper scored his paintings, this is what they’d sound like."
+  <small>— Jake Mendelson, Analog Sound Monthly</small>
+</div>
+<div class="quote">
+  "Every track feels like a scene from a film I haven’t seen but somehow remember."
+  <small>— Rita Voss, Cinematic Audio Digest</small>
+</div>
+<div class="quote">
+  "There’s a rhythm here that matches the road — quiet, endless, and full of stories."
+  <small>— Leo Morgan, The Listening Post</small>
+</div>
+
+
  <div class="footer">
   <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
     <img alt="Creative Commons License" style="border-width:0; vertical-align:middle; margin-right:6px;"
@@ -491,5 +651,26 @@ audio {
   <br><small>© AmberTunes — Maxim Novak</small>
 </div>
   </footer>
+<script>
+  (function() {
+    // Если пользователь просит меньше анимации — выходим
+    const mediaReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (mediaReduced.matches) return;
+
+    const quotes = document.querySelectorAll('.quote');
+    if (!quotes.length) return;
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target); // анимируем один раз
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+
+    quotes.forEach(q => io.observe(q));
+  })();
+</script>
 </body>
 </html>
