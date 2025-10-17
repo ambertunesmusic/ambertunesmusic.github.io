@@ -7,7 +7,13 @@
 
   <meta name="description" content="Instrumental collections by Maxim Novak — cinematic, jazz and bossa nova music for films, storytellers, and dreamers.">
   <meta name="keywords" content="AmberTunes, Maxim Novak, cinematic music, bossa nova, jazz, soundtrack, instrumental, film music">
-  <link rel="icon" href="favicon.png" type="image/png">
+<meta property="og:title" content="AmberTunes — Instrumental Collections by Maxim Novak">
+<meta property="og:description" content="Cinematic, jazz, and bossa nova instrumentals for films, storytellers, and dreamers.">
+<meta property="og:image" content="https://ambertunesmusic.github.io/urban-romance.jpg">
+<meta property="og:url" content="https://ambertunesmusic.github.io/music.html">
+<meta name="description" content="Instrumental collections by Maxim Novak — music for films, storytellers, and dreamers.">
+<meta name="keywords" content="AmberTunes, Maxim Novak, cinematic music, bossa nova, jazz, soundtrack, film music"> 
+ <link rel="icon" href="favicon.png" type="image/png">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M"></script>
@@ -198,20 +204,46 @@ audio {
 
 .footer {
   margin: 7vh 0 40px;
+
+	.main-menu{
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  gap:12px;
+	  margin:28px 0 0;
+	  padding:0;
+	}
+	.main-menu a{
+	  display:inline-block;
+	  width:180px;
+	  text-align:center;
+	  padding:10px 0;
+	  border:1px solid #555;
+	  border-radius:12px;
+	  color:#e0e0e0;
+	  background-color:#111;
+	  transition:all .3s ease;
+	  box-shadow:0 3px 6px rgba(255,255,255,0.06);
+	}
+	.main-menu a:hover{
+	  background-color:#1b1b1b;
+	  transform:translateY(-2px);
+	  box-shadow:0 6px 12px rgba(255,255,255,0.08);
+	}
 }
  </style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html" class="nav-button">Home</a>
-    <a href="music.html" class="nav-button">Music</a>
-    <a href="clips.html" class="nav-button">Clips</a>
-    <a href="films.html" class="nav-button">Films</a>
-    <a href="about.html" class="nav-button">About</a>
-    <a href="contact.html" class="nav-button">Contact</a>
-  </nav>
+	<nav class="main-menu">
+	  <a href="index.html">Home</a>
+	  <a href="music.html">Music</a>
+	  <a href="clips.html">Clips</a>
+	  <a href="films.html">Films</a>
+	  <a href="about.html">About</a>
+	  <a href="contact.html">Contact</a>
+	</nav>
 
   <section class="hero">
     <h1>Music</h1>
