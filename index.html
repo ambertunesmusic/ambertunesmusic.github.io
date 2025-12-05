@@ -42,7 +42,7 @@
   <meta name="twitter:title" content="AmberTunes — Maxim Novak">
   <meta name="twitter:description" content="Cinematic, jazz and bossa nova instrumentals for filmmakers and storytellers.">
   <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-main.jpg">
-  <style>
+<style>
     :root{
       --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --card:#111; --border:#555;
     }
@@ -54,12 +54,16 @@
     a{color:#d9d9d9;text-decoration:none}
     a:hover{text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:0 16px;}
-    header{padding:28px 0 0;}
+
+    /* Верхняя часть: делаем её чуть компактнее */
+    header{
+      padding:16px 0 0;
+    }
 
     /* Main navigation */
     .main-menu{
       display:flex; flex-direction:column; align-items:center;
-      gap:12px; margin:28px 0 0; padding:0;
+      gap:12px; margin:16px 0 0; padding:0;
     }
     .main-menu a{
       display:inline-block; width:180px; text-align:center; padding:10px 0;
@@ -72,28 +76,27 @@
       box-shadow:0 6px 12px rgba(255,255,255,0.08);
     }
 
-    /* Hero (raised slightly from lower third) */
-    
-  .hero{
-  margin: clamp(60px, 12vh, 140px) auto 24px; /* top | left/right | bottom */
-  max-width: 900px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-  border: 1px solid #1e1e1e;
-}
-@media (max-height: 800px){
-  .hero{ margin-top: 80px; }  /* для 14" и ниже по высоте */
-}
-    @media(min-width:1000px){
-  .hero{ margin-top:190px; }
-}
+    /* Hero — поднимаем выше и без медиазапросов */
+    .hero{
+      margin:32px auto 16px; /* top | left/right | bottom */
+      max-width:900px;
+      text-align:center;
+      padding:20px;
+      border-radius:16px;
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid #1e1e1e;
     }
-    .hero h1{ font-weight:600; font-size:2rem; margin:0 0 8px; }
-    .hero p{ margin:0; color:var(--muted); }
+    .hero h1{
+      font-weight:600; font-size:2rem; margin:0 0 8px;
+    }
+    .hero p{
+      margin:0; color:var(--muted);
+    }
 
-    footer{ margin:40px 0 24px; color:#8a8a8a; font-size:.9rem; text-align:center; }
+    footer{
+      margin:16px 0 16px;
+      color:#8a8a8a; font-size:.9rem; text-align:center;
+    }
   </style>
 </head>
 
