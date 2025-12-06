@@ -567,5 +567,18 @@
     quotes.forEach(q => io.observe(q));
   })();
 </script>
-</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const quotes = document.querySelectorAll('.quote');
+  function revealQuotes() {
+    const trigger = window.innerHeight * 0.92;
+    quotes.forEach(q => {
+      const top = q.getBoundingClientRect().top;
+      if (top < trigger) q.classList.add('visible');
+    });
+  }
+  window.addEventListener('scroll', revealQuotes);
+  revealQuotes();
+});
+</script></body>
 </html>
