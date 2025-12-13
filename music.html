@@ -50,36 +50,25 @@ body {
       gap:12px;
       margin:16px 0 0; padding:0;
     }
-    
     .main-menu a{
       display:inline-block;
       width:180px;
-      padding:11px 0;
       text-align:center;
-
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif;
-      font-size:16px;
-      font-weight:500;
+      padding:10px 0;
       line-height:1.2;
-      letter-spacing:.2px;
-
       border:1px solid var(--border);
-      border-radius:14px;
+      border-radius:12px;
       color:#e0e0e0;
       background-color:#111;
-
-      transition:all .25s ease;
+      transition:all .3s ease;
       box-shadow:0 3px 6px rgba(255,255,255,0.06);
       text-decoration:none;
     }
-
-    
     .main-menu a:hover{
       background-color:#1b1b1b;
-      transform:translateY(-1px);
+      transform:translateY(-2px);
       box-shadow:0 6px 12px rgba(255,255,255,0.08);
     }
-
 
     /* === Hero === */
     .hero {
@@ -160,11 +149,15 @@ body {
 
     
 
-/* === Banner height fix (Moonlight Diaries + Silent Roads) === */
-#moonlight-diaries .banner img,
+/* === Banner height fix (only the last two banners) === */
+#moonlight-diaries .banner img{
+  max-height:60vh;
+  object-fit:contain;   /* show full image (no cropping) */
+  background:#000;
+}
 #silent-roads .banner img{
   max-height:60vh;
-  object-fit:cover;
+  object-fit:cover;     /* crop is OK here */
 }
 audio {
       display: block;
