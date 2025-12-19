@@ -17,7 +17,18 @@
     gtag('js', new Date());
     gtag('config', 'G-4R5MGM2N5M');
   </script>
+<script>
+document.addEventListener('play', function(e) {
+  if (e.target.tagName === 'AUDIO') {
+    gtag('event', 'audio_play', {
+      event_category: 'Audio',
+      event_label: e.target.currentSrc
+    });
+  }
+}, true);
+</script>
 
+	
   <style>
     :root {
       --bg: #000;
