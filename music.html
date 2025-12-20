@@ -28,6 +28,22 @@ document.addEventListener('play', function(e) {
 }, true);
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const players = document.querySelectorAll('audio');
+
+  players.forEach(player => {
+    player.addEventListener('play', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'audio_play', {
+          event_category: 'audio',
+          event_label: window.location.pathname
+        });
+      }
+    });
+  });
+});
+</script>
 	
   <style>
     :root {
