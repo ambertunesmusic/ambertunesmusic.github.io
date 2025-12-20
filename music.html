@@ -784,6 +784,51 @@ body {
 
     quotes.forEach(q => io.observe(q));
   })();
+
+	<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const players = Array.from(document.querySelectorAll('audio'));
+
+  function sendAudioPlayEvent(trackLabel) {
+    // Вариант 1: gtag (если GA подключён напрямую)
+    if (typeof gtag === 'function') {
+      gtag('event', 'audio_play', {
+        event_category: 'audio',
+        event_label: trackLabel || window.location.pathname
+      });
+      return;
+    }
+
+    // Вариант 2: dataLayer (если GA через GTM или на всякий случай)
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'audio_play',
+      track: trackLabel || window.location.pathname
+    });
+  }
+
+  players.forEach((player) => {
+    player.addEventListener('play', () => {
+      // Остановить все остальные
+      players.forEach((other) => {
+        if (other !== player && !other.paused) {
+          other.pause();
+          other.currentTime = 0; // если хотите "пауза без сброса" — скажите, уберу эту строку
+        }
+      });
+
+      // Понять, что именно запустили (берём ближайший заголовок перед плеером)
+      const label =
+        player.closest('section, div, article')?.querySelector('h2,h3,h4')?.textContent?.trim()
+        || player.getAttribute('src')
+        || 'audio';
+
+      sendAudioPlayEvent(label);
+    });
+  });
+});
+</script>
+	
 </script>
 </body>
 </html>
