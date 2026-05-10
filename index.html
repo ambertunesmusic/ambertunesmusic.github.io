@@ -145,7 +145,22 @@ html,body{
 
   opacity:.65;
 }
-@media (min-width: 900px){
+.laurels-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  margin:24px auto 10px;
+}
+
+.laurels-row .laurel{
+  height:48px;
+  width:auto !important;
+  max-width:160px;
+  margin:0;
+  opacity:.65;
+}
+	@media (min-width: 900px){
   .hero h1{
     white-space:nowrap;
 	    }
@@ -189,7 +204,10 @@ footer small{
   </main>
 
 <footer class="container">
-  <img src="Sessions_Laurels_White.png" alt="Official Selection laurel" class="laurel">
+  <div class="laurels-row">
+    <img src="Sessions_Laurels_White.png" alt="Official Selection laurel" class="laurel">
+    <img src="Sessions_Laurels_2026_White.png" alt="Official Selection laurel 2026" class="laurel">
+  </div>
   <small>© AmberTunes&nbsp;—&nbsp;Maxim&nbsp;Novak</small>
 </footer>
 </body>
